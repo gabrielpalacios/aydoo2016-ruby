@@ -1,8 +1,4 @@
 language: ruby
 rvm:
   - 2.2
-group :test do
-  gem 'rake'
-end
-
 script: rake
