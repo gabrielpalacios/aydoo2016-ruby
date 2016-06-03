@@ -4,3 +4,5 @@ rvm:
 group :test do
   gem 'rake'
 end
+
+script: rake
