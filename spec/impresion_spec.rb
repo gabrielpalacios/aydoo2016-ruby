@@ -90,6 +90,29 @@ describe 'Impresion' do
 	 end
 
 
+	 #after :all do
+	 it 'test12RecuperoLecturaArchivoQuiet' do
+	 	acumulo_linea = ""
+		File.open('salidaquiet.txt', 'r') do |f1|
+  			while linea = f1.gets
+	    		acumulo_linea += linea 
+  			end
+		end
+		vectorEsperado = "2" + "\n" + "2" + "\n" + "2" + "\n" + "3" + "\n" + "3" + "\n" + "5" + "\n"
+	 	expect(acumulo_linea).to eq vectorEsperado
+ 	 end
+
+ 	  it 'test13RecuperoLecturaArchivoPretty' do
+	 	acumulo_linea = ""
+		File.open('salidapretty.txt', 'r') do |f1|
+  			while linea = f1.gets
+	    		acumulo_linea += linea 
+  			end
+		end
+		vectorEsperado = "Factores primos 360: 2 2 2 3 3 5 \n"
+	 	expect(acumulo_linea).to eq vectorEsperado
+ 	 end
+
 	# pasar este de java a rb!  @AfterClass
 	# public static void test7leertest6() {
 	# 	String recibo = "";
