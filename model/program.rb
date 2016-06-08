@@ -2,17 +2,13 @@
 class Program 
 
 	require 'optparse'
-	#require_relative 'string'
 	require_relative 'impresion'
 	require_relative 'factores_primos'
 
-
-
-	attr_accessor :nombre_archivo
-	attr_accessor :numero_a_factorizar
-	attr_accessor :objeto_factores_primos
-	attr_accessor :formato_elegido
-	attr_accessor :sort_elegido
+	attr_reader :nombre_archivo
+	attr_reader :numero_a_factorizar
+	attr_reader :formato_elegido
+	attr_reader :sort_elegido
 
 
 
@@ -44,11 +40,6 @@ class Program
 	$formato_elegido = $formato_elegido.downcase
 	$sort_elegido = $sort_elegido.downcase
 
-	#puts "debugONLY " + $formato_elegido
-	#puts "debugONLY " + $sort_elegido
-	#puts "debugONLY " + $nombre_archivo
-
-	#mejor, chequeo q el 1er argumento sea un numero:
 	numeroEntrada = ARGV[0]
 
 	unless Impresion.is_a_number(numeroEntrada)
