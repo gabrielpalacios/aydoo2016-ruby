@@ -1,4 +1,6 @@
 # aydoo2016-ruby
+Repositorio Proyecto Factores Primos v3
+Utilizando subcarpeta ahora
 
 No pude implementar un rspec para Program, por lo visto en:
 http://stackoverflow.com/questions/7077026/unable-to-use-optionparser-and-rspec
