@@ -3,5 +3,4 @@ rvm:
   - 2.2.4
 script: 
 - cd factores-primos-3
-- bundle install
-- bundle exec rake
+- rake
