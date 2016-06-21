@@ -1,5 +1,4 @@
 language: ruby
 rvm:
   - 2.2.4
-before_install: cd factores-primos-3
-script: rake
+script: sh -c 'cd factores-primos-3 && rake'
